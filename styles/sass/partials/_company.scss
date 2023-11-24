@@ -1,0 +1,27 @@
+.company_section{
+    background: #716aed;
+
+    .company_image_container{
+        display: flex;
+        // gap: 50px;
+        align-items: center;
+
+        .one{
+            height: 35.51px;
+            
+            img{
+                max-width: 100%;
+                object-fit: contain;
+            }
+        }
+
+
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .company_section{
+        display: none;
+    }
+}
