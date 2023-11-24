@@ -79,10 +79,12 @@
 // *tablet view
 @media screen and (max-width: 768px) {
   .benefits_section {
+    
     .benefits_title {
       font-size: 32px;
       font-weight: 700;
       letter-spacing: -0.64px;
+      margin: 40px 0 20px;
     }
 
     .benefits_cards_container{
@@ -119,10 +121,12 @@ font-size: 14px;
 // *mobile view
 @media screen and (max-width: 575px) {
   .benefits_section {
+    margin-top: 40px;
     .benefits_title {
       text-align: center;
       font-size: 20px;
       letter-spacing: -0.4px;
+      margin: 10px 0 20px;
     }
 
     .benefits_cards_container {
