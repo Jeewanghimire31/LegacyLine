@@ -1,53 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/sass/main.css" />
     <title>LegacyLine</title>
-</head>
-<body>
-   <!-- * Header Start -->
-   
+  </head>
+  <body>
+    <!-- * Header Start -->
+
     <header class="bg-primary">
-        <div class="container header ">
-          <!-- logo -->
-          <h1 class="header__logo">
-            <a href=""><img src="./img/logo.svg" alt="xyz" /></a>
-          </h1>
-          <!-- nav -->
-          <nav>
-            <ul class="header__nav">
-              <li>
-                <a class="header__link__items" href="#">Home</a>
-              </li>
-              <li>
-                <a class="header__link__items" href="#">Services</a>
-              </li>
-              <li>
-                <a class="header__link__items" href="#">Contact</a>
-              </li>
-              <li>
-                <a class="header__link__items" href="#">About us</a>
-              </li>
-              <li>
-                <button class="btn small">Sign Up</button>
-                <!-- <a href="#">Sign up</a> -->
-              </li>
-            </ul>
-          </nav>
-  
-          <div class="ham_burger">
-            <div></div>
-            <div></div>
-            <div></div>
+      <div class="container header">
+        <!-- logo -->
+        <h1 class="header__logo">
+          <a href=""><img src="./img/logo.svg" alt="xyz" /></a>
+        </h1>
+        <!-- nav -->
+        <nav>
+          <ul class="header__nav">
+            <li>
+              <a class="header__link__items" href="#">Home</a>
+            </li>
+            <li>
+              <a class="header__link__items" href="#">Services</a>
+            </li>
+            <li>
+              <a class="header__link__items" href="#">Contact</a>
+            </li>
+            <li>
+              <a class="header__link__items" href="#">About us</a>
+            </li>
+            <li>
+              <button class="btn small sign_up_btn">Sign Up</button>
+              <!-- <a href="#">Sign up</a> -->
+            </li>
+          </ul>
+        </nav>
+
+        <div class="ham_burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <!--* hero section -->
+
+      <section class="hero_section">
+        <div class="container hero">
+          <div class="hero_first">
+            <h1 class="hero_title">
+              Discover Financial Freedom with LegacyLine
+            </h1>
+            <p class="hero_desc text-fade-white">
+              Welcome to our bank's website, where we provide secure financial
+              solutions tailored to meet your unique needs.
+            </p>
+            <div class="hero_btn">
+              <button class="btn open_btn big">Open Bank Account</button>
+              <button class="btn learn_btn big outline">Learn More</button>
+            </div>
+            <div class="hero_stats">
+              <div>
+                <p class="hero_stats_title">&lt;0.1%</p>
+                <p class="hero_stats_info text-fade-white">Transaction Fees</p>
+              </div>
+              <div>
+                <p class="hero_stats_title">+14%</p>
+                <p class="hero_stats_info text-fade-white">
+                  Savings Percentage
+                </p>
+              </div>
+              <div>
+                <p class="hero_stats_title">+2.9M</p>
+                <p class="hero_stats_info text-fade-white">Business Owner</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero_second">
+            <div class="iphone">
+              <figure class="desktop_view">
+                <img src="./img/banner/iphone.svg" alt="iphone" />
+              </figure>
+              <figure class="tablet_view">
+                <img src="./img/banner/tablet_iphone.svg" alt="iphone" />
+              </figure>
+            </div>
           </div>
         </div>
-  
-            <!--* hero section -->
-       
-      </header>
+      </section>
+    </header>
 
+    <main>
+      <section class="company_section">
+        <div class="container company_image_container">
+          <div class="company_image">
+            <figure><img src="./img/company/1.svg" alt="Binance" /></figure>
+          </div>
+          <div class="company_image">
+            <figure><img src="./img/company/2.svg" alt="IBM" /></figure>
+          </div>
+          <div class="company_image">
+            <figure><img src="./img/company/3.svg" alt="PNC" /></figure>
+          </div>
+          <div class="company_image">
+            <figure><img src="./img/company/4.svg" alt="the world" /></figure>
+          </div>
+          <div class="company_image">
+            <figure><img src="./img/company/5.svg" alt="stripe" /></figure>
+          </div>
+        </div>
+      </section>
+      <section class="benefits_section">
+        <div class="container">
+          <div class="benefits_title">Our Benefits</div>
+          <div class="benefits_cards_container">
+            <div class="benefits_card">
+              <figure>
+                <img src="./img/benefits/home.svg" alt="Home" />
+              </figure>
+              <h2 class="benefits_card_title">Financial Services</h2>
+              <p class="benefits_desc">
+                Banks provide a wide range of financial services, including
+                checking and savings accounts, loans, credit cards, and
+                investment production...
+              </p>
+              <div class="benefits_blanks"></div>
+              <a class="benefits_readmore" href="#">Read More -></a>
+            </div>
+            <div class="benefits_card">
+              <figure>
+                <img src="./img/benefits/uiw_safety.svg" alt="Home" />
+              </figure>
+              <h2 class="benefits_card_title">Safety and Security</h2>
+              <p class="benefits_desc">
+                Banks provide a wide range of financial services, including
+                checking and savings accounts, loans, credit cards, and
+                investment production...
+              </p>
+              <div class="benefits_blanks"></div>
+              <a class="benefits_readmore" href="#">Read More -></a>
+            </div>
+            <div class="benefits_card">
+              <figure>
+                <img src="./img/benefits/economic.svg" alt="Home" />
+              </figure>
+              <h2 class="benefits_card_title">Economic Stability</h2>
+              <p class="benefits_desc">
+                Banks provide a wide range of financial services, including
+                checking and savings accounts, loans, credit cards, and
+                investment production...
+              </p>
+              <div class="benefits_blanks"></div>
+              <a class="benefits_readmore" href="#">Read More -></a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-</body>
+      <section class="download_section">
+        <div class="container">
+          <div class="download_content_picture">
+            <img src="./img/girl.svg" alt="girl" />
+            <div class="download_content_card">
+              <p class="download_content_card_title">
+                Ready for the future? Download The App!
+              </p>
+              <p class="lowertext">
+                Download the banking app to easily manage your finances, check
+                account balances, transfer money, pay bills, and access a range
+                of banking services from your mobile device.
+              </p>
+              <div class="download_content_card_pic">
+                <div>
+                  <img src="./img/Play Store badge.svg" alt="play store" />
+                </div>
+                <div>
+                  <img src="./img/App Store badge.svg" alt="play store" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
