@@ -48,7 +48,6 @@
     display: flex;
     gap: 10px;
     justify-content: space-between;
-    
 
     .hero_first {
       width: 45%;
@@ -116,7 +115,7 @@
       margin: 0 auto;
 
       .iphone {
-        width: 400px;
+        width: 100%;
 
         figure {
           margin: 0;
@@ -195,8 +194,9 @@
       .hero_second {
         .iphone {
           .tablet_view {
-            display: block;
-            width: 300px;
+            display: flex;
+            width: 100%;
+            height: 100%;
 
             img {
               max-width: 100%;
@@ -301,10 +301,10 @@
 
       .hero_second {
         width: 100%;
-        
-        .iphone{
-          width: 100%;
+        margin-bottom: 20px;
 
+        .iphone {
+          width: 100%;
         }
       }
     }

@@ -1,27 +1,26 @@
-.company_section{
-    background: #716aed;
+.company_section {
+  background: #716aed;
 
-    .company_image_container{
-        display: flex;
-        // gap: 50px;
-        align-items: center;
+  .company_image_container {
+    display: flex;
+    gap: 12.2rem;
+    align-items: center;
+    justify-content: space-between;
 
-        .one{
-            height: 35.51px;
-            
-            img{
-                max-width: 100%;
-                object-fit: contain;
-            }
-        }
+    .company_image {
+      height: 35.51px;
 
-
+      img {
+        height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+      }
     }
-
+  }
 }
 
-@media screen and (max-width: 768px) {
-    .company_section{
-        display: none;
-    }
+@media screen and (max-width: 575px) {
+  .company_section {
+    display: none;
+  }
 }

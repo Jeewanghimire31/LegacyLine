@@ -1,23 +1,36 @@
 .download_section {
   width: 100%;
   margin-bottom: 30px;
+  position: relative;
 
   .download_content_picture {
-    // width: 500px;
     margin: 0 auto;
     width: 80%;
-    position: relative;
+
+    img {
+      height: 426px;
+      max-width: 100%;
+    }
   }
 
   .download_content_card {
+    p {
+      margin: 0;
+    }
     border: 1px solid #1d1c311a;
     border-radius: 8px;
-    background: #fff;
+    background: $white;
     box-shadow: 0px 24px 64px -12px rgba(26, 24, 65, 0.06);
-    text-align: center;
+    text-align: left;
     position: absolute;
-    left: 200px;
-    bottom: 0px;
+    left: 413px;
+    bottom: 36px;
+    padding: 36px;
+    max-width: 40%;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;
 
     .download_content_card_title {
       color: var(--Text, #1d1c31);
@@ -29,8 +42,6 @@
     }
 
     .lowertext {
-      color: rgba(29, 28, 49, 0.6);
-      font-family: Plus Jakarta Sans;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
@@ -46,25 +57,66 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .download_section {
+    text-align: left;
+
+    .download_content_card {
+      left: 310px;
+      bottom: -248px;
+      gap: 20px;
+
+      .download_content_card_title {
+        color: var(--Text, #1d1c31);
+        font-size: 32px;
+        letter-spacing: -0.64px;
+      }
+
+      .lowertext {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 575px) {
   .download_section {
     text-align: center;
     .download_content_picture {
+      
+        img{
+            object-fit: cover;
+        }
     }
 
     .download_content_card {
       position: static;
       top: auto;
-      margin: 24px;
+      border: none;
+        box-shadow: none;
+        padding: 0;
+        width: 100%;
+        text-align: initial;
+        max-width: 100%;
+    //   margin: 24px;
 
+
+
+    
+        
+   
       .download_content_card_title {
         font-size: 20px;
-        line-height: 31px; /* 155% */
+        line-height: 31px;
       }
 
       .lowertext {
         font-size: 14px;
-        line-height: 28px; /* 200% */
+        line-height: 28px;
+
+        p{
+            margin: 0;
+        }
       }
     }
   }
