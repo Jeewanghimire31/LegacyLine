@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 32px;
+  }
+
+//   for small screen
+  .ham_burger {
+    cursor: pointer;
+    display: none;
+
+    div {
+      //   display: block;
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      margin: 5px 0;
+    }
+  }
+}
+
+// tablet view
+@media screen and (max-width: 991px) {
+}
+
+// tablet view
+@media screen and (max-width: 768px) {
+  .header {
+    .header__nav {
+      display: none;
+    }
+
+    .ham_burger {
+      display: block;
+    }
+  }
+}
